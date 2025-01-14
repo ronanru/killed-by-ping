@@ -13,38 +13,61 @@ import Card from "../components/Card.astro";
     <title>Killed by Ping</title>
   </head>
   <body
-    class="text-sans bg-[#080808] px-[max(1rem,_calc(50vw_-_350px))] py-16 text-gray-300"
+    class="text-sans flex min-h-screen flex-col bg-[#080808] px-[max(1rem,_calc(50vw_-_350px))] text-gray-300"
   >
-    <h1 class="text-center text-5xl font-bold text-gray-100">Killed By Ping</h1>
-    <div class="grid gap-4 pt-32 md:grid-cols-2">
-      <Card
-        years="2023"
-        description="Create typesafe server actions."
-        link="https://webhookthing.com"
-      >
-        <p class="font-medium text-white text-lg">
-          zact
-        </p>
-      </Card>
-      <Card
-        years="2022-2023"
-        description="Run webhooks locally with 1 click."
-        link="https://webhookthing.com"
-      >
-        <p class="font-medium text-white text-lg">
-          webhook<span class="font-extrabold text-indigo-400">thing</span>
-        </p>
-      </Card>
-      <Card
-        years="2022"
-        description="An easy way to curate questions from your audience."
-        link="https://ask.ping.gg"
-      >
-        <p class="font-medium text-white text-lg">
-          <span class="text-[#E24B8C]">Ping</span>
-          Ask
-        </p>
-      </Card>
+    <div class="flex-1 py-16">
+      <h1 class="text-center text-5xl font-bold text-gray-100">
+        Killed By Ping
+      </h1>
+      <div class="grid gap-4 pt-32 md:grid-cols-2">
+        <Card
+          years="2023"
+          description="Chop your streams in record time."
+          link="https://markerthing.com/"
+        >
+          <p class="text-lg font-medium text-white">
+            marker<span class="text-pink-500">thing</span>
+          </p>
+        </Card>
+        <Card
+          years="2023"
+          description="Create typesafe server actions."
+          link="https://github.com/pingdotgg/zact"
+        >
+          <p class="text-lg font-medium text-white">zact</p>
+        </Card>
+        <Card
+          years="2022-2023"
+          description="Run webhooks locally with 1 click."
+          link="https://webhookthing.com"
+        >
+          <p class="text-lg font-medium text-white">
+            webhook<span class="font-extrabold text-indigo-400">thing</span>
+          </p>
+        </Card>
+        <Card
+          years="2022"
+          description="An easy way to curate questions from your audience."
+          link="https://ask.ping.gg"
+        >
+          <p class="text-lg font-medium text-white">
+            <span class="text-[#E24B8C]">Ping</span>
+            Ask
+          </p>
+        </Card>
+        <Card
+          years="2021"
+          description="The best way to create live content with a group."
+          link="https://x.com/theo/status/1436447851890937856"
+        >
+          <p class="text-lg font-medium text-white">Round</p>
+        </Card>
+      </div>
     </div>
+    <footer class="p-4 text-center text-gray-400 underline">
+      <a href="https://github.com/ronanru/killed-by-ping" target="_blank"
+        >GitHub</a
+      >
+    </footer>
   </body>
 </html>
