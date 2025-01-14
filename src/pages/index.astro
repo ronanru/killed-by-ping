@@ -1,11 +1,50 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import "@fontsource-variable/inter";
+import Card from "../components/Card.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Killed by Ping</title>
+  </head>
+  <body
+    class="text-sans bg-[#080808] px-[max(1rem,_calc(50vw_-_350px))] py-16 text-gray-300"
+  >
+    <h1 class="text-center text-7xl font-bold text-gray-100">Killed By Ping</h1>
+    <div class="grid gap-4 pt-32 md:grid-cols-2">
+      <Card
+        years="2023"
+        description="Create typesafe server actions."
+        link="https://webhookthing.com"
+      >
+        <p class="font-medium text-white text-lg">
+          zact
+        </p>
+      </Card>
+      <Card
+        years="2022-2023"
+        description="Run webhooks locally with 1 click."
+        link="https://webhookthing.com"
+      >
+        <p class="font-medium text-white text-lg">
+          webhook<span class="font-extrabold text-indigo-400">thing</span>
+        </p>
+      </Card>
+      <Card
+        years="2022"
+        description="An easy way to curate questions from your audience."
+        link="https://ask.ping.gg"
+      >
+        <p class="font-medium text-white text-lg">
+          <span class="text-[#E24B8C]">Ping</span>
+          Ask
+        </p>
+      </Card>
+    </div>
+  </body>
+</html>
